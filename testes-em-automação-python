@@ -1,3 +1,9 @@
+#sera necessario instalar alguns módulos para funcionar, sendo eles:
+#pyautogui
+#pyperclip
+#panda
+#openpyxl
+
 import pyautogui
 import pyperclip
 from time import sleep
