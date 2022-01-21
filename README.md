@@ -1,2 +1,2 @@
-# teste-das-minhas-aulas
- Aqui tem um pouquinho de tudo que eu aprendi com Python!!!
+#minhas-aulas
+ Aqui tem um pouquinho de tudo que estou aprendendo em programação!!!
