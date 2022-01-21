@@ -1,0 +1,7 @@
+function copiar() {
+
+}
+
+function analisar() {
+
+}
