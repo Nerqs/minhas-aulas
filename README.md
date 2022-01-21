@@ -1,2 +1,3 @@
 #minhas-aulas
- Aqui tem um pouquinho de tudo que estou aprendendo em programação!!!
+
+Aqui tem um pouquinho de tudo que estou aprendendo em programação!!!
