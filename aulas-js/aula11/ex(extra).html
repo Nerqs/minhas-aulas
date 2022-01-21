@@ -8,16 +8,17 @@
 </head>
 <body>
     <h1>Você é brasileiro?</h1>
-    Onde você nasceu? <input type="text" name="mora" id="mora"><br>
+    Onde você nasceu? <input type="text" name="txtnasc" id="txtnasc"><br>
     <input type="buttom" value="Verificar" onclick="verificar()">
     <div id="res">
 
     </div>
     <script>
         function verificar () {
-            var nasc = window.document.querySelector('input#mora')
+            var nasc = window.document.getElementById('txtnasc')
             var res = window.document.querySelector('div#res')
-            if (nasc != 'Brasil') {
+            var nasc2 = String(nasc.value)
+            if (nasc2 != 'Brasil') {
                 res.innerHTML = 'Você é Estrangeiro!'
             } else {
                 res.innerHTML = 'Você é Brasileiro!'
