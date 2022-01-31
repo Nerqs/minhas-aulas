@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <title>Social</title>
+    <title>Mídias em HTML5</title>
 </head>
 <body>
-    <h1>Minha redes sociais</h1>
-    <h2>Quem sou eu?</h2>
-    <img src="imgs/foto.png" alt="minhafoto">
-    <p>Meu nome é <strong>Jean Carlos</strong>, sou estudante de tecnologia, venho aprendendo muitas linguagens, como, Python 3, JavaScript, HTML, CSS entre outras. Estou gostando muito dos resultados que venho tendo e gostaria de melhorar minhas habilidades ainda mais.</p>
-    <h2>Como falar comigo?</H2>
-        <ul>
-            <li><img src="imgs/facebook.png" alt="facxe"><a href="https://www.facebook.com/jean.carlos.90834/" target="_blank" rel="external">/jeancarlos</a> - Meu facebook.</li>
-            <li><img src="imgs/whatsapp.png" alt="wpp"><a href="https://api.whatsapp.com/send?phone=5519988009178" target="_blank" rel="external">/numero</a> - Meu whatsapp</li>
-            <li><img src="imgs/instagram.png" alt="instagram"><a href="https://www.instagram.com/nerkeek/" target="_blank" rel="external">/jeancarlos</a> - Meu instragram</li>
-            <li><img src="imgs/linkedin.png" alt="linkedin"><a href="https://www.linkedin.com/in/jean-carlos-pereira-631a79227/" target="_blank" rel="external">/jeancarlos</a> - Meu linkedin</li>
-            <li><img src="imgs/twitter.png" alt="twitter"><a href="https://twitter.com/Nerkekk" target="_blank" rel="external">/jeancarlos</a> - Meu twitter</li>
-        </ul>
+    <h1>Imagem dinamâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/media.png" type="image/png">
+        <img src="img/grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls loop> <!-- autoplay -->
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <source src="midia/musica.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musica.mp3"Clique aqui para baixar o arquivo></a></p>
+    </audio>
 </body>
 </html>
