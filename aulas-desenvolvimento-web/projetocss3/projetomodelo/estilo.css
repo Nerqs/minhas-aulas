@@ -1,0 +1,41 @@
+body {
+    background: url('img/fundo.png');
+    font: 16px Arial, Helvetica, sans-serif;
+    width: 900px;
+}
+
+.links {
+    background: blanchedalmond;
+    padding: 18px;
+    color: rgb(136, 125, 109);
+}
+
+a {
+    color: rgb(136, 125, 109);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.texto {
+    background-color: white;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.titulo {
+    font-size: 25px;
+    color: rgb(136, 125, 109);
+    font-weight: bold;
+}
+
+.img-camp {
+    border: 10px solid rgb(136, 125, 109);
+}
