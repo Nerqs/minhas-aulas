@@ -1,0 +1,392 @@
+/*Seletor universal
+* {
+    border: 1px solid red;
+}*/
+
+/*Seletor de texto
+h1 {
+    color: green;
+}*/
+
+/*Seletor de classes
+.verde {
+    color: green;
+}
+
+p.verde {
+    color: green;
+}*/
+
+/*Seletor de ID
+#cabecalho {
+    border: 1px solid blue;
+}*/
+
+/*Seletor Filho
+li>a {
+    color: red;
+    text-decoration: none;
+}*/
+
+/*Seletor de descendente
+p a {
+    color: green;
+}*/
+
+/*Seletor irmão adjacente
+h1+p {
+    color: red;
+}*/
+
+/*Seletor de irmão geral
+h1~p {
+    color: pink;
+}*/
+
+/*Herança e especifidade
+p {
+    color: blue !important;
+}
+
+p {
+    color: red;
+}*/
+
+/*Se um seletor for mais específico que outro a regra mais específica será aplicada(terá precedencia sobre regras mais gerais)
+* { 4°
+    color: red;
+}
+
+h2 { 3°
+    color: blue;
+}
+
+h2.verde { 2°
+    color: green;
+}
+
+h2#amarelo { 1°
+    color: yellow;
+}*/
+
+/*Barra de navegação vertical
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 20px;
+    background: url("../img/seta.png") no-repeat left center;
+}*/
+
+/*ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    background: url('../img/menu.png') no-repeat left bottom;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+}*/ /*Sempre utilize um background de cor solida para caso aconteça algum problema com a imagem não fique dificil navegar*/
+
+/*ul a:hover{
+    background-position: right bottom;
+    color: #fff;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+    background-position: right bottom;
+    color: #fff;
+}*/
+
+/*Barra de navegação horizontal
+ul#navegacao {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 556px;
+    background: #159cb0 url("../img/fundo-horizontal.png") repeat-x;
+    float: left;
+}
+
+ul#navegacao li {
+    float: left;
+}
+
+ul#navegacao a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    background: url("../img/divisor.png") repeat-y;
+}
+
+ul#navegacao .primeiro a {
+    background: none;
+}
+
+ul#navegacao a:hover {
+    color: #085662;
+    background-color: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+    color: #085662;
+    background-color: #44cade;
+}*/
+
+/*Barra de navegação com abas
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li {
+    float: left;
+    background: url("../img/aba-direita.png") no-repeat top right;
+}
+
+li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url('../img/aba-esquerda.png') no-repeat top left;
+    color: white;
+}
+
+ul a:hover {
+    color: #894a1f;
+}
+
+ul #atual {
+    background: url("../img/aba-direita-atual.png") no-repeat top right;
+}
+
+ul #atual a {
+    background: url('../img/aba-esquerda-atual.png') no-repeat top left;
+}*/
+
+/*Layouts
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+#container {
+    width: 960px; 85% para liquido,720px antes para layout fixo
+    margin: 0 auto;
+    background: #fff url("../img/coluna.png") repeat-y;
+    min-width: 820px;
+}
+
+#marca {
+    width: 100%;
+    height: 200px;
+    background: #225992 url("../img/cabecalho2.jpg") no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+
+.imagem {
+    width: 90%;
+    overflow: hidden;
+}
+
+#conteudo {
+    width: 75%; 520px antes para layout fixo
+    float: right;
+}
+
+#conteudo-principal {
+    width: 60%; 320px antes para layout fixo
+    float: left;
+}
+
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+}
+
+#conteudo-secundario {
+    width: 28%; 140px antes para layout fixo
+    float: right;
+    background: #d1d1d1;
+    padding: 0 20px;
+}
+
+#navegacao {
+    width: 23%; 180px antes para layout fixo
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}*/
+
+/*Tabelas
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: separate; collapse
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+tr:hover td {
+    background-color: #c3e6e5;
+}
+
+.numero {
+    text-align: right;
+}*/
+
+/*Estilizando formularios
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input { input [type="text"]
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+}
+
+input.radio, input.checkbox, input.submit {
+    width: auto;
+}
+
+.radio {
+    margin-right: 1em;
+}*/
+
+/*Estilizando formularios parte 2
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #643d87 url(../img/fundo.jpg) no-repeat;
+    background-size: 100% 1000px;
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30%;
+    text-align: center;
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input.email {
+    background-image: url(../img/icone-usuario.png);
+}
+
+input.senha {
+    background-image: url(../img/icone-cadeado.png);
+}
+
+input.submit {
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}*/
+
+/*Arredondando imagens*/
