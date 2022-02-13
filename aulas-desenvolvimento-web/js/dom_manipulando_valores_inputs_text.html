@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <input id="valor" onkeyup="analiza_caracter()" type="text" placeholder="Digite um caracter aqui...">
+
+    <hr>
+
+    <span>Letras:</span>
+    <input id="letras" type="text" disabled>
+
+    <span>Números:</span>
+    <input id="numeros" type="text" disabled>
+
+    <script>
+        function analiza_caracter(){
+            let valor = document.getElementById('valor').value
+            document.getElementById('valor').value = ''
+            let letras = document.getElementById('letras')
+            let numeros = document.getElementById('numeros')
+
+            if (valor != ' ') {
+                switch(valor) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    numeros.placeholder += valor
+                    break;
+                default:
+                    letras.value += valor
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

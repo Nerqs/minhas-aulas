@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcões Strings</title>
+
+    <script>
+        //https://www.w3schools.com/jsref/jsref_obj_string.asp
+        var nome = 'Jean Carlos'
+
+        //propriedade length
+        document.write(nome.length)
+        document.write('<br>')
+        document.write('<br>')
+
+        //função charAt(numéro do index)
+        document.write(nome.charAt(0))
+        document.write('<br>')
+        document.write('<br>')
+
+        //função indexOF(qualquer caracter)//indica qual a primeira ocorrencia do caracter//caso não haver ocorrencia o valor retornado é -1
+        document.write(nome.indexOf('a'))
+        document.write('<br>')
+        document.write('<br>')
+
+        //função replace('ocorrencia na string', 'substitue por')
+        document.write(nome.replace('Carlos', 'Pereira'))
+        document.write('<br>')
+        document.write('<br>')
+
+        //função substr(index inicio, quantidade a ser exibida contando o inicio)
+        document.write(nome.substr(0, 4))
+        document.write('<br>')
+        document.write('<br>')
+
+        //função toUpperCase()//converte para caixa alta
+        document.write(nome.toUpperCase())
+        document.write('<br>')
+        document.write('<br>')
+
+        //função toLowerCase()//converte para caixa baixa
+        document.write(nome.toLowerCase())
+        document.write('<br>')
+        document.write('<br>')
+
+        //função trim()//remove os espaços em branco das estremidades da string
+        document.write(nome.trim())
+        document.write('<br>')
+        document.write('<br>')
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

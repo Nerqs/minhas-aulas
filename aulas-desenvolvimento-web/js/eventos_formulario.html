@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Formulario</title>
+    <script>
+        //https://www.w3schools.com/jsref/event_onfocus.asp
+        //https://www.w3schools.com/jsref/event_onblur.asp
+        //https://www.w3schools.com/jsref/event_onchange.asp
+    </script>
+</head>
+<body>
+    <input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text">
+
+    <select onchange="console.log('estado foi modificado')">
+        <option>Selecione</option>
+        <option value="1">Primeira Opção</option>
+        <option value="2">Segunda Opção</option>
+    </select>
+</body>
+</html>
