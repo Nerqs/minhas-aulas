@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulando Estilos</title>
+</head>
+<body>
+    <div>
+        <h3>Manipulando estilos</h3>
+
+        <button type="button" onclick="modificaCor('red', '200px', '200px')">Vermelho</button>
+        <button type="button" onclick="modificaCor('green', '300px', '300px')">Verde</button>
+        <button type="button" onclick="modificaCor('blue', '400px', '400px')">Azul</button>
+    </div>
+    <div id="quadrado" style="border: 1px solid black; width: 100px; height: 100px; margin-top: 10px;">
+    </div>
+
+    <script>
+        //https://www.w3schools.com/jsref/dom_obj_style.asp
+        //LEMBRE DE USAR OS PARAMETROS
+        /*
+        var quadrado = document.getElementById('quadrado')
+
+        function modificaCor(cor) {
+            quadrado.style.background = cor
+        }
+        */
+
+        //Utilize o padrão camelcase(primeira letra maiscura tudo junto)
+        //quando mexer em styles que pedem px, %, em ou outros, coloque na frente do numero
+        function modificaCor(cor, lar, alt) {
+            document.getElementById('quadrado').style.backgroundColor = cor
+            document.getElementById('quadrado').style.width = lar
+            document.getElementById('quadrado').style.height = alt
+        }
+    </script>
+</body>
+</html>
