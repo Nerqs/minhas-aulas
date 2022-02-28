@@ -13,54 +13,7 @@
 		<link rel="stylesheet" href="css/estilo.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-		<script>
-			function editar(id, texto_tarefa) {
-				//criar um form de edição
-				let form = document.createElement('form')
-				form.action = '#'
-				form.method = 'POST'
-				form.className = 'row'
-
-				//criar um input para entrada do texto
-				let inputTarefa = document.createElement('input')
-				inputTarefa.type = 'text'
-				inputTarefa.name = 'tarefa'
-				inputTarefa.className = 'col-9 form-control'
-				inputTarefa.value = texto_tarefa
-
-				//criar um input hidden para guardar o id da tarefa
-				let input_id = document.createElement('input')
-				input_id.type = 'hidden'
-				input_id.nome = 'id'
-				input_id.value = id
-
-				//criar um button para envio do form
-				let button = document.createElement('button')
-				button.type = 'submit'
-				button.className = 'col-3 btn btn-info'
-				button.innerHTML = 'Atualizar'
-
-				//incluir o inputTarafe no form
-				form.appendChild(inputTarefa)
-				
-				//incluir o input_id no form
-				form.appendChild(input_id)		
-
-				//incluir o button no form
-				form.appendChild(button)
-
-				//selecionar a div tarefa
-				let tarefa = document.getElementById('tarefa_'+id)
-
-				//limpar o conteudo interno
-				tarefa.innerHTML = ''
-
-				//incluir o form
-				tarefa.insertBefore(form, tarefa[0])
-
-			}
-		</script>
+		<?php require "../../app_lista_tarefas/script.php" ?>
 	</head>
 
 	<body>
@@ -95,9 +48,13 @@
 									<div class="row mb-3 d-flex align-items-center tarefa">
 										<div id="tarefa_<?=$tarefa->id?>" class="col-sm-9"><?= $tarefa->tarefa ?> (<?=$tarefa->status?>)</div>
 										<div class="col-sm-3 mt-2 d-flex justify-content-between">
-											<i class="fas fa-trash-alt fa-lg text-danger"></i>
-											<i class="fas fa-edit fa-lg text-info" onclick="editar(<?=$tarefa->id?>, '<?= $tarefa->tarefa ?>')"></i>
-											<i class="fas fa-check-square fa-lg text-success"></i>
+											<i class="fas fa-trash-alt fa-lg text-danger" onclick="remover(<?= $tarefa->id ?>)"></i>
+
+											<?php if($tarefa->status == 'pendente') { ?>
+												<i class="fas fa-edit fa-lg text-info" onclick="editar(<?=$tarefa->id?>, '<?= $tarefa->tarefa ?>')"></i>
+												<i class="fas fa-check-square fa-lg text-success" onclick="confirmar(<?= $tarefa->id ?>)"></i>
+											<?php } ?>
+											
 										</div>
 									</div>
 

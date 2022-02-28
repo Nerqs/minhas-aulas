@@ -12,9 +12,9 @@
         }
 
         public function inserir(){ //create
-            $query = 'insert into tb_tarefas(tarefa)values(:tarefa)';
+            $query = 'insert into tb_tarefas(tarefa)values(?)';
             $stmt = $this->conexao->prepare($query);
-            $stmt->bindValue(':tarefa', $this->tarefa->__get('tarefa'));
+            $stmt->bindValue(1, $this->tarefa->__get('tarefa'));
             $stmt->execute();
         }
 
@@ -31,10 +31,27 @@
         }
 
         public function atualizar(){ //update
+            $query = "update tb_tarefas set tarefa = ? where id = ?";
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(1, $this->tarefa->__get('tarefa'));
+            $stmt->bindValue(2, $this->tarefa->__get('id'));
+            return $stmt->execute();
 
         }
 
         public function remover(){ //delete
+            $query = 'delete from tb_tarefas where id = :id';
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(':id', $this->tarefa->__get('id'));
+            $stmt->execute();
+        }
+
+        public function confirmar(){ //confimar tarefa
+            $query = "update tb_tarefas set id_status = ? where id = ?";
+            $stmt = $this->conexao->prepare($query);
+            $stmt->bindValue(1, $this->tarefa->__get('id_status'));
+            $stmt->bindValue(2, $this->tarefa->__get('id'));
+            return $stmt->execute();
 
         }
     }
